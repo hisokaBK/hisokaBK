@@ -5,32 +5,6 @@
 
 ---
 
-### 🔭 I’m currently working on
-- Web applications with **Laravel**
-- Projects using **React** & **Redux**
-- Database design with **MongoDB** & **MySQL**
-
-### 🌱 I’m currently learning
-- Advanced **Laravel** (Middleware, ORM, Security)
-- **Docker** for development environments
-- MongoDB **Aggregation Framework**
-
-### 👯 I’m looking to collaborate on
-- Web projects (CRUD apps, APIs, dashboards)
-- Student or open-source projects
-
-### 💬 Ask me about
-- Laravel & MVC architecture  
-- MongoDB queries & aggregations  
-- SQL (procedures, triggers, relations)
-
-### 📫 How to reach me
-- GitHub: [github.com/hisokaBK](https://github.com/hisokaBK)
-- LinkedIn: *(zid lien ila 3andk)*
-
-### ⚡ Fun fact
-- I enjoy explaining technical concepts to others 😄
-
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/bilal._.hisoka) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:bilalbakessou99@gmail.com) 
