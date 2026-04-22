@@ -1,25 +1,58 @@
-## Hi there 👋 I'm Bilel
+# ⚡ Hello, I'm Bilal ! 
+### Backend Software Developer | Digital Web Student
 
-🎓 Étudiant en **Développement Digital – Web**  
-💻 Passionné par le **Back-end & Front-end Web**
+<p align="left">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+</p>
+
+---
+
+### 🚀 About Me
+- 🎓 Currently specializing in **Digital Development (Web)**.
+- 🛠️ Focused on building robust backend architectures using **PHP, Laravel, and modern design patterns**.
+- 🏗️ Deep interest in **Inversion of Control (IoC), Dependency Injection, and Real-time systems (WebSockets)**.
+- ⚡ I love crafting clean code and optimizing database structures.
 
 ---
 
+### 🛠️ My Tech Stack
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/bilal._.hisoka) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:bilalbakessou99@gmail.com) 
-
-# 💻 Tech Stack:
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=hisokaBK&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=hisokaBK&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=hisokaBK&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=hisokaBK&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+| Domain | Tools & Technologies |
+| :--- | :--- |
+| **Backend** | `PHP`, `Laravel`, `C`, `MySQL`, `PostgreSQL`, `MongoDB` |
+| **Frontend** | `JavaScript`, `React`, `Redux`, `TailwindCSS`, `HTML5/CSS3` |
+| **DevOps & Tools** | `Docker`, `Git`, `GitHub`, `Netlify`, `Figma` |
 
 ---
-[![](https://visitcount.itsvg.in/api?id=hisokaBK&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+### 📂 Featured Projects
+- **EasyColoc** 🏠: Roommate management platform built with Laravel (MVC Architecture).
+- **PHP-ORM** ⛓️: A custom Object-Relational Mapper developed to understand core backend logic.
+- **Streaming Backend** 🎥: Real-time recording and storage system for streaming platforms.
+
+---
+
+### 📊 My GitHub Journey
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=hisokaBK&show_icons=true&theme=radical&hide_border=true" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hisokaBK&layout=compact&theme=radical&hide_border=true" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=hisokaBK&theme=radical" width="100%" />
+</p>
+
+---
+
+### 📫 Connect with me:
+<p align="left">
+<a href="https://instagram.com/bilal._.hisoka" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="bilal._.hisoka" height="30" width="40" /></a>
+<a href="mailto:bilalbakessou99@gmail.com"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.svg" alt="gmail" height="30" width="40" /></a>
+</p>
+
+<p align="right">
+  <img src="https://visitcount.itsvg.in/api?id=hisokaBK&icon=0&color=0" />
+</p>
