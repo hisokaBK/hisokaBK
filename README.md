@@ -1,7 +1,7 @@
 <div align="center">
 
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&section=header&text=Bilal%20Bakessou&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20•%20Laravel%20Architect%20•%20PHP%20Engineer&descAlignY=60&color=0:0d1117,25:1a1027,50:4c1d95,75:bd00ff,100:0d1117" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&section=header&text=Bilal%20Bakessou&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20•%20Laravel%20Architect%20•%20PHP%20Engineer&descAlignY=60&color=0:0d1117,25:1a1027,50:4c1d95,75:bd00ff,100:0d1117" />
 
 <br>
 
@@ -99,28 +99,24 @@ My work is centered around transforming business logic into clean and scalable s
 
 ---
 
-<div align="center">
-
 ## Featured Projects
-
-</div>
 
 <div align="center">
 
 <a href="https://github.com/hisokaBK/Streaming_Platform">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=Streaming_Platform&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=Streaming_Platform&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" alt="Streaming Platform repo card" />
 </a>
 
 <a href="https://github.com/hisokaBK/Colocation-EasyColoc">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=Colocation-EasyColoc&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=Colocation-EasyColoc&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" alt="EasyColoc repo card" />
 </a>
 
 <a href="https://github.com/hisokaBK/PHP-ORM">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=PHP-ORM&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=PHP-ORM&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" alt="PHP ORM repo card" />
 </a>
 
 <a href="https://github.com/hisokaBK/EcoShop_API">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=EcoShop_API&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=EcoShop_API&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" alt="EcoShop API repo card" />
 </a>
 
 </div>
@@ -133,13 +129,13 @@ My work is centered around transforming business logic into clean and scalable s
 
 <br>
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=hisokaBK&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff&rank_icon=github" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=hisokaBK&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff&rank_icon=github" alt="Bilal GitHub stats" />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hisokaBK&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&text_color=ffffff" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hisokaBK&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&text_color=ffffff" alt="Top languages" />
 
 <br><br>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=hisokaBK&bg_color=0d1117&color=ffffff&line=BD00FF&point=ff00c8&area=true&hide_border=true" />
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=hisokaBK&bg_color=0d1117&color=ffffff&line=BD00FF&point=ff00c8&area=true&hide_border=true" alt="GitHub activity graph" />
 
 </div>
 
