@@ -173,17 +173,20 @@ My work is centered around transforming business logic into clean and scalable s
 <div align="center">
 
 ## Connect
-
+<div >
 <a href="mailto:bilalbakessou99@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-<a href="https://instagram.com/bilal._.hisoka">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+<a href="https://www.linkedin.com/in/bilal-bakessou-bs6/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 <a href="https://github.com/hisokaBK">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
-
+<a href="https://instagram.com/bilal._.hisoka">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
+</div>
 <br><br>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:0d1117,25:1a1027,50:4c1d95,75:bd00ff,100:0d1117" />
