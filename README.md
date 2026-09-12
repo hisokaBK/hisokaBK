@@ -151,20 +151,17 @@ My work is centered around transforming business logic into clean and scalable s
 
 <div align="center">
 
-## GitHub Stats
+## GitHub Activity & Streak
 
-<br>
+<div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=hisokaBK&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff&rank_icon=github" alt="Bilal GitHub stats" />
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hisokaBK&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&text_color=ffffff" alt="Top languages" />
+<img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=hisokaBK&theme=tokyonight&background=0D1117&stroke=BD00FF&ring=BD00FF&fire=BD00FF" alt="GitHub Streak" />
 
 <br><br>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=hisokaBK&bg_color=0d1117&color=ffffff&line=BD00FF&point=ff00c8&area=true&hide_border=true" alt="GitHub activity graph" />
+<img width="100%" src="https://snake-gh-contribution-grid-snake.vercel.app/api/github-contribution-grid-snake?username=hisokaBK&snakeColor=BD00FF&gridColor=0d1117" alt="Snake Animation" />
 
 </div>
-
 ---
 
 <div align="center">
