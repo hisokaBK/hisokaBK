@@ -168,17 +168,6 @@ My work is centered around transforming business logic into clean and scalable s
 </div>
 ---
 
-<div align="center">
-
-## Current Focus
-
-Building stronger backend architecture with Laravel  
-Designing scalable APIs and clean project structures  
-Improving database thinking and system modeling  
-Creating polished full-stack projects with strong backend foundations
-
-</div>
-
 ---
 
 <div align="center">
