@@ -161,7 +161,7 @@ My work is centered around transforming business logic into clean and scalable s
 
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hisokaBK&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff&border_radius=10" alt="Game Player Stats" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&stroke=BD00FF&strokeWidth=2&height=150&section=header&text=🎮%20PLAYER:%20hisokaBK%20|%20STATUS:%20ACTIVE&fontSize=20&fontColor=ffffff" alt="Player Header" />
 </div>
 
 
