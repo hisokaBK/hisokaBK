@@ -161,9 +161,7 @@ My work is centered around transforming business logic into clean and scalable s
 
 
 <div align="center">
-  <a href="https://github.com/hisokaBK">
-    <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&customColorList=0d1117,BD00FF,0d1117&height=150&section=header&text=🎮%20Game%20Loop:%20Coding%20%E2%86%92%20Commit%20%E2%86%92%20Repeat&fontSize=22&fontColor=BD00FF&animation=twinkle" alt="Game Loop Banner" />
-  </a>
+  <img src="https://github-readme-stats.vercel.app/api?username=hisokaBK&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff&border_radius=10" alt="Game Player Stats" />
 </div>
 
 
