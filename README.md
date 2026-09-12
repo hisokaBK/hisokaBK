@@ -159,7 +159,9 @@ My work is centered around transforming business logic into clean and scalable s
 
 <br><br>
 
-<img width="100%" src="https://snake-gh-contribution-grid-snake.vercel.app/api/github-contribution-grid-snake?username=hisokaBK&snakeColor=BD00FF&gridColor=0d1117" alt="Snake Animation" />
+<div align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/hisokaBK/hisokaBK/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
+</div>
 
 </div>
 ---
