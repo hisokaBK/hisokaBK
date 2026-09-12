@@ -99,28 +99,54 @@ My work is centered around transforming business logic into clean and scalable s
 
 ---
 
-## Featured Projects
+## 🚀 Featured Projects
 
-<div align="center">
-
-<a href="https://github.com/hisokaBK/Streaming_Platform">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=Streaming_Platform&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" alt="Streaming Platform repo card" />
-</a>
-
-<a href="https://github.com/hisokaBK/Colocation-EasyColoc">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=Colocation-EasyColoc&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" alt="EasyColoc repo card" />
-</a>
-
-<a href="https://github.com/hisokaBK/PHP-ORM">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=PHP-ORM&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" alt="PHP ORM repo card" />
-</a>
-
-<a href="https://github.com/hisokaBK/EcoShop_API">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=hisokaBK&repo=EcoShop_API&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BD00FF&icon_color=BD00FF&text_color=ffffff" alt="EcoShop API repo card" />
-</a>
-
-</div>
-
+<table align="center" width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <h3>🎬 Real-time Streaming Platform</h3>
+      <a href="https://github.com/hisokaBK/Streaming_Platform">
+        <img src="https://raw.githubusercontent.com/hisokaBK/Streaming_Platform/main/preview.png" width="100%" alt="Streaming Platform" onerror="this.src='https://via.placeholder.com/600x300/0d1117/BD00FF?text=Streaming+Platform+App'"/>
+      </a>
+      <p>منصة بث مباشر وفيديوهات آنية</p>
+      <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Vue_3-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+    </td>
+    <td width="50%" align="center">
+      <h3>🏠 EasyColoc</h3>
+      <a href="https://github.com/hisokaBK/Colocation-EasyColoc">
+        <img src="https://raw.githubusercontent.com/hisokaBK/Colocation-EasyColoc/main/preview.png" width="100%" alt="EasyColoc" onerror="this.src='https://via.placeholder.com/600x300/0d1117/BD00FF?text=EasyColoc+App'"/>
+      </a>
+      <p>تطبيق إدارة السكن المشترك والمصاريف</p>
+      <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
+      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <h3>🛠️ Custom PHP ORM</h3>
+      <a href="https://github.com/hisokaBK/PHP-ORM">
+        <img src="https://raw.githubusercontent.com/hisokaBK/PHP-ORM/main/preview.png" width="100%" alt="PHP ORM" onerror="this.src='https://via.placeholder.com/600x300/0d1117/BD00FF?text=Custom+PHP+ORM'"/>
+      </a>
+      <p>محرك ORM خاص مبني بلغة PHP و Docker</p>
+      <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+    </td>
+    <td width="50%" align="center">
+      <h3>🛒 EcoShop API</h3>
+      <a href="https://github.com/hisokaBK/EcoShop_API">
+        <img src="https://raw.githubusercontent.com/hisokaBK/EcoShop_API/main/preview.png" width="100%" alt="EcoShop API" onerror="this.src='https://via.placeholder.com/600x300/0d1117/BD00FF?text=EcoShop+REST+API'"/>
+      </a>
+      <p>API للتجارة الإلكترونية سريعة الأداء</p>
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+    </td>
+  </tr>
+</table>
 ---
 
 <div align="center">
