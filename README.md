@@ -50,29 +50,25 @@
   <h3>Languages &amp; Web Fundamentals</h3>
   <picture><img src="https://skillicons.dev/icons?i=c,php,python,js,ts,html,css&amp;theme=dark" alt="C, PHP, Python, JavaScript, TypeScript, HTML and CSS" /></picture>
   <br />
-  <sub>C · PHP · Python · JavaScript · TypeScript · HTML · CSS</sub>
 
-  <br /><br />
+  <br />
 
   <h3>Frameworks &amp; Frontend</h3>
   <picture><img src="https://skillicons.dev/icons?i=laravel,react,vue,redux,tailwind,bootstrap,fastapi&amp;theme=dark" alt="Laravel, React, Vue.js, Redux, Tailwind CSS, Bootstrap and FastAPI" /></picture>
   <br />
-  <sub>Laravel · React · Vue.js · Redux · Tailwind CSS · Bootstrap · FastAPI</sub>
 
-  <br /><br />
+  <br />
 
   <h3>Databases &amp; Data</h3>
   <picture><img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb&amp;theme=dark" alt="PostgreSQL, MySQL and MongoDB" /></picture>
   <br />
-  <sub>PostgreSQL · MySQL · MongoDB</sub>
-  <br /><br />
+  <br />
   <picture><img src="https://img.shields.io/badge/MariaDB-1A1031?style=for-the-badge&amp;logo=mariadb&amp;logoColor=C084FC" alt="MariaDB" /></picture>
   <picture><img src="https://img.shields.io/badge/Pandas-1A1031?style=for-the-badge&amp;logo=pandas&amp;logoColor=C084FC" alt="Pandas" /></picture>
   <picture><img src="https://img.shields.io/badge/SQL-1A1031?style=for-the-badge&amp;logo=postgresql&amp;logoColor=C084FC" alt="SQL" /></picture>
   <br />
-  <sub>MariaDB · Pandas · SQL</sub>
-
-  <br /><br />
+  
+  <br />
 
   <h3>API Design, Documentation &amp; Testing</h3>
   <picture><img width="64" height="64" src="./assets/icons/postman.png" alt="Postman" /></picture>
@@ -84,24 +80,21 @@
   <picture><img src="https://img.shields.io/badge/OpenAPI-1A1031?style=for-the-badge&amp;logo=openapiinitiative&amp;logoColor=C084FC" alt="OpenAPI" /></picture>
   <picture><img src="https://img.shields.io/badge/REST%20APIs-1A1031?style=for-the-badge&amp;logo=fastapi&amp;logoColor=E879F9" alt="REST APIs" /></picture>
   <br />
-  <sub>OpenAPI · REST APIs</sub>
 
-  <br /><br />
+  <br />
 
   <h3>DevOps &amp; Workflow Tools</h3>
   <picture><img src="https://skillicons.dev/icons?i=docker,git,github,linux,vscode,figma,nginx&amp;theme=dark" alt="Docker, Git, GitHub, Linux, VS Code, Figma and Nginx" /></picture>
   <br />
-  <sub>Docker · Git · GitHub · Linux · VS Code · Figma · Nginx</sub>
-  <br /><br />
+  <br />
   <picture><img src="https://img.shields.io/badge/Composer-1A1031?style=for-the-badge&amp;logo=composer&amp;logoColor=C084FC" alt="Composer" /></picture>
   <picture><img src="https://img.shields.io/badge/Apache-1A1031?style=for-the-badge&amp;logo=apache&amp;logoColor=C084FC" alt="Apache" /></picture>
   <picture><img src="https://img.shields.io/badge/DBeaver-1A1031?style=for-the-badge&amp;logo=dbeaver&amp;logoColor=C084FC" alt="DBeaver" /></picture>
   <picture><img src="https://img.shields.io/badge/Twig-1A1031?style=for-the-badge&amp;logo=twig&amp;logoColor=C084FC" alt="Twig" /></picture>
   <picture><img src="https://img.shields.io/badge/Blade-1A1031?style=for-the-badge&amp;logo=laravel&amp;logoColor=C084FC" alt="Blade" /></picture>
-  <br /><br />
+  <br />
   <picture><img src="https://img.shields.io/badge/Docker%20Compose-1A1031?style=for-the-badge&amp;logo=docker&amp;logoColor=C084FC" alt="Docker Compose" /></picture>
   <br />
-  <sub>Composer · Apache · DBeaver · Twig · Blade · Docker Compose</sub>
 
   <br /><br />
   <sub>Also working with: MVC · OOP · PDO · PSR-4 · Git workflows · authentication &amp; authorization · database modeling.</sub>
@@ -139,9 +132,7 @@
   <a href="https://github.com/hisokaBK/EcoShop_API">
     <img width="97%" src="./assets/projects/ecoshop-api.png" alt="EcoShop API — Python and FastAPI. Open GitHub repository" />
   </a>
-  <br />
 
-  <sub>Project art is illustrative — select a cover to see each repository's real code.</sub>
 </div>
 
 <br />
