@@ -147,7 +147,7 @@
 <br />
 
 <div align="center">
-  <picture><img width="340" src="https://i.pinimg.com/originals/f3/78/33/f3783305417034ed6a2f77864f141203.gif" alt="Second animated Hisoka GIF from the original profile" /></picture>
+ 
   <br />
   <picture><img width="92%" src="./assets/hisoka-cards.gif" alt="Animated Hisoka themed neon separator" /></picture>
 </div>
