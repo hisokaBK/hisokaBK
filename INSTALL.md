@@ -1,70 +1,36 @@
-# Hisoka GitHub Profile — Final V4
+# Hisoka GitHub Profile — V5 (Developer Card + Starred Repos Fix)
 
-**Target:** https://github.com/hisokaBK/hisokaBK
+This is a complete GitHub profile package for `https://github.com/hisokaBK/hisokaBK`.
 
 ## Installation
 
-1. Extract `Hisoka_GitHub_Profile_V4_Final.zip`.
-2. Copy `README.md` **and the complete `assets/` folder** to the root of your GitHub profile repository `hisokaBK/hisokaBK`.
-3. Commit the new files (or replace the existing files with matching names).
-4. Open your profile and refresh the page. GitHub may cache images temporarily.
+1. Extract the ZIP.
+2. Copy **README.md**, **assets/**, **scripts/**, and **.github/** into the repository root (preserve directories exactly).
+3. Commit all files to the repository's **default branch**.
+4. Visit **Actions > Update starred repositories badge > Run workflow** once to fetch the most recent number.
+5. The workflow will then check for changes approximately every 6 hours, assuming Actions are enabled and the repository grants the workflow `contents: write` permissions. Scheduled jobs are not guaranteed to start exactly on time.
 
-### PowerShell (from inside the profile repository)
+### What the Stars badge means
 
-```powershell
-git add README.md assets/
-git commit -m "Finalize Hisoka profile README V4"
-git push
-```
+The GitHub profile `Stars` tab counts repositories **you have starred**. The old Shields.io `/github/stars/hisokaBK` endpoint tracks stars received by your repositories. Those are different measures.
 
-If `git push` reports no upstream branch, use `git push -u origin main` for a `main` branch, or check your branch with `git branch --show-current`.
+The `STARRED REPOS` badge is initially **121**, matching the GitHub profile tab visible on November 18, 2026. It becomes automatically maintained after you upload and enable the included workflow.
 
-## Included features
+If GitHub Actions are disabled or workflow push permissions are blocked, the initial value will remain static until you run a successful workflow. Manual workflow runs are available from Actions after the workflow is committed on the default branch.
 
-- Original hand-fixed animated Hisoka banner (`assets/hisoka-banner.gif`).
-- Both original Hisoka GIFs embedded in the About and Featured Projects sections via public external links.
-- Animated card-suit separators (`assets/hisoka-cards.gif`), neon section headings and the engineering timeline.
-- Four large **clickable cover images** pointing to the user's four repositories.
-- C, PHP, Python, JavaScript, TypeScript, HTML/CSS, Laravel, React, Vue, Redux, Tailwind, Bootstrap, FastAPI, SQL/NoSQL, etc.
-- **Postman and Swagger icons** supplied as matching local image tiles in `assets/icons/`. OpenAPI and REST API remain separate badges.
-- **Backend Tools:** Composer, Apache, DBeaver, Twig, Blade.
-- **DevOps & Workflow Tools:** Docker, Git, GitHub, Linux, VS Code, Figma, Nginx, Docker Compose.
-- GitHub overview contains account stats and top languages only. **No streak card or contribution graph**.
-- The unwanted `DESIGN • LOGIC • PRECISION` aura animation has been **removed from the repository package**.
-- No traditional HTML or Markdown tables.
+### Developer card
 
-## Clickability and rendering notes
+`assets/developer-card.gif` is an animated graphic card created to reproduce the requested GitHub look (neon purple border, intro text and Hisoka portrait). It replaces the About Me free-floating text layout; a collapsible text equivalent is included below the artwork for accessibility and copying.
 
-- Project covers and contact links use explicit `<a>` tags and are intentionally clickable.
-- The banner, decorative images, icons and statistics use `<picture>` with no explicit link. This is a **best effort** to avoid GitHub's image-viewer click behavior; GitHub controls its own renderer, so it is not guaranteed for every image or future GitHub update.
-- README styling uses only markup GitHub supports; there are no custom CSS/JS interactions.
-- Third-party images (GitHub stats, skill icons, badges and typing SVG) require external services to be online.
-- Images from Pinterest are externally hosted and could stop loading. They are not bundled in this package.
-- The four illustrated project covers are **not application screenshots**.
+The card text is part of a GIF, because GitHub README rendering does not support arbitrary custom CSS for framed text/image overlays. Links to projects and contact still work as before.
 
-## Project layout
+### Visual content
 
-```text
-README.md
-INSTALL.md
-assets/
-  hisoka-banner.gif
-  hisoka-cards.gif
-  engineering-flow.png
-  section-about.png
-  section-arsenal.png
-  section-mindset.png
-  section-projects.png
-  section-activity.png
-  section-contact.png
-  icons/
-    postman.png
-    swagger.png
-  projects/
-    streaming-platform.png
-    easycoloc.png
-    php-orm.png
-    ecoshop-api.png
-```
+- All four project covers link to their repositories.
+- Tech Arsenal retains Postman and Swagger icons, backend tools, and DevOps & Workflow categories.
+- Removed content stays removed: DESIGN/LOGIC/PRECISION banner, streak stats, and contribution graph.
+- All local media references are relative to this repository root.
 
-**Important:** Do not upload the `README.md` alone. The images reference `./assets/`.
+## Troubleshooting
+
+If the badge never updates: open Actions > workflow runs to inspect errors, then check repository Settings > Actions > General > Workflow permissions. Repository policy may override requested permissions. GitHub may delay scheduled runs.
