@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Bilal Bakessou — Full-Stack Web Developer</title>
+  <desc id="desc">Professional portfolio header featuring full-stack development, APIs, and data.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1729"/>
+      <stop offset="1" stop-color="#142c42"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#43c8b8"/>
+      <stop offset="1" stop-color="#69aeea"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#94bad0" stroke-width="0.7" opacity=".12"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="18" fill="url(#grid)"/>
+  <circle cx="1084" cy="104" r="157" fill="none" stroke="#59c5c6" stroke-width="1.5" opacity=".35"/>
+  <circle cx="1084" cy="104" r="110" fill="none" stroke="#69aeea" stroke-width="1" opacity=".3"/>
+  <circle cx="1084" cy="104" r="62" fill="none" stroke="#94e7de" stroke-width="1" opacity=".2"/>
+  <path d="M1002 224l-42-41 42-41M1110 142l42 41-42 41" fill="none" stroke="#73d3c8" stroke-width="7" opacity=".48" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="64" y="52" width="7" height="187" rx="3.5" fill="url(#accent)"/>
+  <text x="93" y="85" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="4" fill="#8de3d8">SOFTWARE ENGINEERING · MOROCCO</text>
+  <text x="92" y="156" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="800" letter-spacing="1" fill="#ffffff">BILAL BAKESSOU</text>
+  <text x="94" y="206" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="600" fill="#d2e7f1">FULL-STACK WEB DEVELOPER</text>
+  <text x="94" y="251" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="1.2" fill="#8fd9de">React  /  TypeScript  /  Laravel  /  Python  /  SQL</text>
+</svg>
