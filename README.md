@@ -1,14 +1,15 @@
 <!--
   Bilal Bakessou — professional GitHub profile, 2026.
-  Original visual system. Section animations are real, optimized GIFs; static fallbacks
-  are provided for visitors who prefer reduced motion. Project illustrations are
-  conceptual artwork (not app screenshots). Photos are supplied by the profile owner.
+  Section animations are optimized GIFs. The hero uses animated WebP to preserve
+  real photo detail. The four original photos are stored unchanged in assets/photos/original.
+  Only cropping and proportional resizing are used inside the hero composition.
+  Project illustrations are conceptual artwork, not screenshots.
 -->
 
 <div align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/hero.webp" />
-    <img src="./assets/animated/hero.gif" alt="Bilal Bakessou — Full-Stack Web Developer in Morocco, working with web applications, REST APIs and data" width="100%" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/hero-original-photos.webp" />
+    <img src="./assets/animated/hero-original-photos.webp" alt="Bilal Bakessou — Full-Stack Web Developer; original photos from a workshop, tech event, GITEX Africa and campus" width="100%" />
   </picture>
 
   <p><strong>Full-Stack Web Development &nbsp;•&nbsp; Backend & APIs &nbsp;•&nbsp; Data</strong></p>
@@ -37,7 +38,7 @@
 <a name="about"></a>
 <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/about.webp" /><img src="./assets/animated/about.gif" alt="About me: developer mindset, clean architecture and human-centered products" width="100%" /></picture>
 
-<img src="./assets/photos/gitex.webp" align="right" width="213" alt="Bilal at GITEX Africa 2026 in Marrakech" />
+<img src="./assets/photos/original/gitex.jpeg" align="right" width="213" alt="Bilal at GITEX Africa 2026 in Marrakech" />
 
 I'm **Bilal Bakessou**, a developer from Morocco. I build web products from **frontend interfaces** through **backend APIs and databases** and explore practical **data engineering**.
 
@@ -137,9 +138,14 @@ Hands-on full-stack and data projects, including API design, backend systems, re
 
 I enjoy discovering new technologies, meeting people around innovation and exploring places outside the screen. Here are a few moments that matter to me.
 
-<img src="./assets/photos/moments.webp" alt="Photo gallery: Bilal beside a Tesla humanoid robot, enjoying sunset outdoors, and attending GITEX Africa Morocco 2026" width="100%" />
+<div align="center">
+  <a href="./assets/photos/original/classroom.jpg"><img src="./assets/photos/original/classroom.jpg" height="205" alt="Original photo: presenting at a whiteboard" /></a>
+  <a href="./assets/photos/original/robot.jpeg"><img src="./assets/photos/original/robot.jpeg" height="205" alt="Original photo: next to a humanoid robot at a technology event" /></a>
+  <a href="./assets/photos/original/gitex.jpeg"><img src="./assets/photos/original/gitex.jpeg" height="205" alt="Original photo: GITEX Africa Morocco event" /></a>
+  <a href="./assets/photos/original/campus.jpg"><img src="./assets/photos/original/campus.jpg" height="205" alt="Original photo: on campus by a colorful mural" /></a>
+</div>
 
-<sub>Original photos supplied by me and optimized for the web. Event and nature photography are real; project graphics are illustrations.</sub>
+<sub>The four source photographs above are the unchanged uploaded originals. The hero only crops and scales them to fit the design; no AI retouching or face modification is applied. Project visuals are conceptual illustrations.</sub>
 
 <a name="contact"></a>
 <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/static/contact.webp" /><img src="./assets/animated/contact.gif" alt="Contact: opportunities in web development, APIs, data and collaboration" width="100%" /></picture>
