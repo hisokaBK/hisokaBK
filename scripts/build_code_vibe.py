@@ -131,9 +131,9 @@ def project(p,i):
     if key=='weather':
         weather_visual(im,(30,25,500,370))
     else:
-        path=ROOT/'assets'/'projects'/('pharmaclick-screenshot.png' if key=='pharmaclick' else 'streaming-screenshot.webp')
+        path=ROOT/'assets'/'projects'/('pharmaclick-screenshot.webp' if key=='pharmaclick' else 'streaming-screenshot.webp')
         if not path.is_file():
-            path=ROOT/'assets'/'projects'/(key+'.webp')
+            raise FileNotFoundError(path)
         ph=ImageOps.contain(Image.open(path).convert('RGB'),(490,350),Image.Resampling.LANCZOS)
         d.rounded_rectangle((30,25,530,395),radius=18,fill=PANEL,outline=LINE,width=2)
         im.paste(ph,(30+(500-ph.width)//2,25+(370-ph.height)//2))
