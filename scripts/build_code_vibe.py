@@ -90,27 +90,35 @@ def title(key,a,b,file):
         frames.append(im)
     gif('title-'+key,frames,[320,320,320,2300])
 def education_timeline(rows):
-    # Reverse chronological path, matching the existing education order.
-    # Only dates already supplied in the profile are displayed.
+    # A downward arrow traces the reverse-chronological timeline.
     h=60+len(rows)*116; im=canvas(1200,h); d=ImageDraw.Draw(im)
     axis=57; ys=[48+i*116 for i in range(len(rows))]
-    d.line((axis,ys[0],axis,ys[-1]),fill=LINE,width=3)
+    start=ys[0]-24; finish=ys[-1]+29
+    d.line((axis,start,axis,finish),fill=LINE,width=3)
     for i,(head,desc) in enumerate(rows):
         y=ys[i]
         txt(d,(100,y-19),head,34,BLUE,True)
         txt(d,(100,y+28),desc,25,TEXT)
-    frames=[]
-    # A subtle progress sweep along the line; all words remain visible.
-    for active in range(len(rows)):
-        f=im.copy(); dd=ImageDraw.Draw(f)
-        if active:
-            dd.line((axis,ys[0],axis,ys[active]),fill=BLUE,width=3)
-        for i,y in enumerate(ys):
-            dd.ellipse((axis-9,y-9,axis+9,y+9),fill=BG,outline=BLUE if i<=active else LINE,width=3)
-            if i<=active:
-                dd.ellipse((axis-4,y-4,axis+4,y+4),fill=BLUE)
-        frames.append(f)
-    gif('education',frames,[600]*(len(rows)-1)+[3000])
+    frames=[]; durations=[]
+    # Smooth travel, a brief pause at each milestone, then a final readable hold.
+    stops=[start]+ys+[finish]
+    for segment,(a,b) in enumerate(zip(stops,stops[1:])):
+        count=max(3,round((b-a)/7))
+        for step in range(count+1):
+            if segment and not step: continue
+            tip=round(a+(b-a)*step/count)
+            f=im.copy(); dd=ImageDraw.Draw(f)
+            if tip>start: dd.line((axis,start,axis,tip),fill=BLUE,width=3)
+            for y in ys:
+                reached=tip>=y
+                dd.ellipse((axis-9,y-9,axis+9,y+9),fill=BG,outline=BLUE if reached else LINE,width=3)
+                if reached: dd.ellipse((axis-4,y-4,axis+4,y+4),fill=BLUE)
+            # Keep the arrowhead visible even as it crosses a milestone.
+            dd.line((axis-9,tip-10,axis,tip,axis+9,tip-10),fill=BLUE,width=3,joint='curve')
+            frames.append(f)
+            durations.append(650 if step==count and b in ys else 65)
+    durations[-1]=2800
+    gif('education',frames,durations)
 
 def info(key,rows,phot=None):
     h=max(230,60+len(rows)*104);im=canvas(1200,h);d=ImageDraw.Draw(im)
