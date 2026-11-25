@@ -89,6 +89,29 @@ def title(key,a,b,file):
         txt(d,(1168,52),file,22,MUTED,mono=True,anchor='rm')
         frames.append(im)
     gif('title-'+key,frames,[320,320,320,2300])
+def education_timeline(rows):
+    # Reverse chronological path, matching the existing education order.
+    # Only dates already supplied in the profile are displayed.
+    h=60+len(rows)*116; im=canvas(1200,h); d=ImageDraw.Draw(im)
+    axis=57; ys=[48+i*116 for i in range(len(rows))]
+    d.line((axis,ys[0],axis,ys[-1]),fill=LINE,width=3)
+    for i,(head,desc) in enumerate(rows):
+        y=ys[i]
+        txt(d,(100,y-19),head,34,BLUE,True)
+        txt(d,(100,y+28),desc,25,TEXT)
+    frames=[]
+    # A subtle progress sweep along the line; all words remain visible.
+    for active in range(len(rows)):
+        f=im.copy(); dd=ImageDraw.Draw(f)
+        if active:
+            dd.line((axis,ys[0],axis,ys[active]),fill=BLUE,width=3)
+        for i,y in enumerate(ys):
+            dd.ellipse((axis-9,y-9,axis+9,y+9),fill=BG,outline=BLUE if i<=active else LINE,width=3)
+            if i<=active:
+                dd.ellipse((axis-4,y-4,axis+4,y+4),fill=BLUE)
+        frames.append(f)
+    gif('education',frames,[600]*(len(rows)-1)+[3000])
+
 def info(key,rows,phot=None):
     h=max(230,60+len(rows)*104);im=canvas(1200,h);d=ImageDraw.Draw(im)
     if phot:photo(im,phot,(875,20,290,h-40));d=ImageDraw.Draw(im)
@@ -169,7 +192,7 @@ for t in titles:title(*t)
 info('about',[('Full-Stack & Data','Web interfaces, backend APIs and data workflows.'),('Developer mindset','Clean architecture and useful, maintainable software.'),('Open to opportunities','Junior roles, internships and collaborations.')], 'assets/photos/original/gitex.jpeg')
 info('stack',[('Frontend','React · Vue.js · TypeScript · JavaScript · Tailwind · Bootstrap'),('Backend','PHP · Laravel · Node.js · Express.js · Python · REST APIs · MVC'),('Data','PostgreSQL · MySQL / MariaDB · MongoDB · Pandas · ETL'),('Tools','Git · GitHub · Docker · Postman · Linux · VS Code')])
 info('experience',[('Logic Technologies MA','Web Development Intern · May – July 2026'),('Somavira','Data cleaning & structuring · March – April 2025')])
-info('education',[('YouCode (UM6P)','Full-Stack Web Development & Data · 2025 – 2026'),('OFPPT','Technicien Spécialisé en Développement Digital · Bac+2'),('Faculté des Sciences Moulay Ismaïl','University studies · Meknès'),('Baccalauréat SVT','2020')])
+education_timeline([('YouCode (UM6P)','Full-Stack Web Development & Data · 2025 – 2026'),('OFPPT','Technicien Spécialisé en Développement Digital · Bac+2'),('Faculté des Sciences Moulay Ismaïl','University studies · Meknès'),('Baccalauréat SVT','2020')])
 info('contact',[("Let's build something together",'Open to junior developer roles and meaningful projects.')])
 # Remove stale generated profile cards and replaced button, not the source repositories.
 for key in ('ecoshop','easycoloc','orm'):
