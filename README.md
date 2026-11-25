@@ -40,7 +40,7 @@
 
 <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/title-experience.png" /><img src="./assets/code-vibe/title-experience.gif" width="100%" alt="Learning by building..." /></picture>
 
-<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/experience.png" /><img src="./assets/code-vibe/experience.gif" width="100%" alt="Logic Technologies MA web development internship, May–July 2026; YouCode project-based development, 2025–2026." /></picture>
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/experience.png" /><img src="./assets/code-vibe/experience.gif" width="100%" alt="Logic Technologies MA web development internship, May–July 2026; Somavira internship: data cleaning and structuring, March–April 2025." /></picture>
 
 
 <br />
