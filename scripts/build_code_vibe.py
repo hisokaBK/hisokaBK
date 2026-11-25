@@ -90,7 +90,7 @@ def title(key,a,b,file):
         frames.append(im)
     gif('title-'+key,frames,[320,320,320,2300])
 def education_timeline(rows):
-    # A downward arrow traces the reverse-chronological timeline.
+    # An upward arrow traces the timeline from oldest to newest.
     h=60+len(rows)*116; im=canvas(1200,h); d=ImageDraw.Draw(im)
     axis=57; ys=[48+i*116 for i in range(len(rows))]
     start=ys[0]-24; finish=ys[-1]+29
@@ -101,20 +101,20 @@ def education_timeline(rows):
         txt(d,(100,y+28),desc,25,TEXT)
     frames=[]; durations=[]
     # Smooth travel, a brief pause at each milestone, then a final readable hold.
-    stops=[start]+ys+[finish]
+    stops=[finish]+list(reversed(ys))+[start]
     for segment,(a,b) in enumerate(zip(stops,stops[1:])):
-        count=max(3,round((b-a)/7))
+        count=max(3,round(abs(b-a)/7))
         for step in range(count+1):
             if segment and not step: continue
             tip=round(a+(b-a)*step/count)
             f=im.copy(); dd=ImageDraw.Draw(f)
-            if tip>start: dd.line((axis,start,axis,tip),fill=BLUE,width=3)
+            if tip<finish: dd.line((axis,tip,axis,finish),fill=BLUE,width=3)
             for y in ys:
-                reached=tip>=y
+                reached=tip<=y
                 dd.ellipse((axis-9,y-9,axis+9,y+9),fill=BG,outline=BLUE if reached else LINE,width=3)
                 if reached: dd.ellipse((axis-4,y-4,axis+4,y+4),fill=BLUE)
             # Keep the arrowhead visible even as it crosses a milestone.
-            dd.line((axis-9,tip-10,axis,tip,axis+9,tip-10),fill=BLUE,width=3,joint='curve')
+            dd.line((axis-9,tip+10,axis,tip,axis+9,tip+10),fill=BLUE,width=3,joint='curve')
             frames.append(f)
             durations.append(650 if step==count and b in ys else 65)
     durations[-1]=2800
