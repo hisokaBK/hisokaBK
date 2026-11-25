@@ -106,15 +106,38 @@ def info(key,rows,phot=None):
 projects=[
  ('pharmaclick','PharmaClick','Multilingual pharmacy storefront','React / JavaScript / CSS','PharmaClick','https://pharma-click.netlify.app/'),
  ('streaming','Streaming Platform','Live video, replay & audience interaction','Laravel / Vue.js / LiveKit / PostgreSQL','Streaming_Platform',None),
- ('ecoshop','EcoShop API','Authentication, products, carts & orders','PHP / Laravel / REST / Docker','EcoShop_API',None),
  ('weather','Weather Risk Pipeline','Data ingestion, cleaning & risk analysis','Python / Pandas / Airflow / PostgreSQL','pipeline-de-donnees',None),
- ('easycoloc','EasyColoc','Shared housing, expenses & balances','Laravel / Blade / Tailwind / Docker','Colocation-EasyColoc',None),
- ('orm','Custom PHP ORM','Lightweight PDO ORM and MVC CRUD','PHP / PDO / PostgreSQL / Docker','PHP-ORM',None),
 ]
+def weather_visual(im,box):
+    x,y,w,h=box; d=ImageDraw.Draw(im)
+    d.rounded_rectangle((x,y,x+w,y+h),radius=18,fill=PANEL,outline=LINE,width=2)
+    txt(d,(x+20,y+15),'WEATHER / DATA ENGINEERING',19,BLUE,mono=True)
+    stages=[('01','INGEST','Weather API'),('02','TRANSFORM','Pandas'),('03','STORE','PostgreSQL'),('04','VISUALIZE','Streamlit')]
+    for i,(n,label,tech) in enumerate(stages):
+        yy=y+55+i*62
+        d.rounded_rectangle((x+20,yy,x+w-20,yy+47),radius=9,fill=BG,outline=LINE,width=1)
+        txt(d,(x+32,yy+12),n,17,MUTED,mono=True)
+        txt(d,(x+76,yy+10),label,20,BLUE,True)
+        txt(d,(x+w-34,yy+23),tech,18,TEXT,anchor='rm')
+        if i<3:
+            cx=x+w//2
+            d.line((cx,yy+47,cx,yy+61),fill=CYAN,width=2)
+            d.polygon([(cx-5,yy+55),(cx+5,yy+55),(cx,yy+62)],fill=CYAN)
+    txt(d,(x+20,y+h-40),'ORCHESTRATION / APACHE AIRFLOW',17,MUTED,mono=True)
 def project(p,i):
     key,name,desc,stack,repo,demo=p
     im=canvas(1200,420);d=ImageDraw.Draw(im)
-    photo(im,'assets/projects/'+key+'.webp',(30,25,500,370),18);d=ImageDraw.Draw(im)
+    # Keep screenshots at their native aspect ratio; do not crop away the actual UI.
+    if key=='weather':
+        weather_visual(im,(30,25,500,370))
+    else:
+        path=ROOT/'assets'/'projects'/('pharmaclick-screenshot.png' if key=='pharmaclick' else 'streaming-screenshot.webp')
+        if not path.is_file():
+            path=ROOT/'assets'/'projects'/(key+'.webp')
+        ph=ImageOps.contain(Image.open(path).convert('RGB'),(490,350),Image.Resampling.LANCZOS)
+        d.rounded_rectangle((30,25,530,395),radius=18,fill=PANEL,outline=LINE,width=2)
+        im.paste(ph,(30+(500-ph.width)//2,25+(370-ph.height)//2))
+    d=ImageDraw.Draw(im)
     txt(d,(570,31),f'PROJECT / {i:02d}',21,MUTED,mono=True)
     txt(d,(570,87),name,37,TEXT,True)
     # Fit text to right side with measured wrapping.
@@ -127,7 +150,8 @@ def project(p,i):
             else:line=cand
         txt(d,(570,y),line,sz,color)
     wrap(desc,151,29,TEXT);wrap(stack,256,24,BLUE)
-    txt(d,(570,371),'CONCEPTUAL PROJECT VISUAL',17,MUTED,mono=True)
+    is_screen=key=='pharmaclick' or (key=='streaming' and (ROOT/'assets/projects/streaming-screenshot.webp').is_file())
+    txt(d,(570,371),'APPLICATION SCREENSHOT' if is_screen else 'CONCEPTUAL PROJECT VISUAL',17,MUTED,mono=True)
     frames=[]
     for n in (1,2,3):
         f=im.copy();ImageDraw.Draw(f).rectangle((570,330,570+n*45,333),fill=BLUE);frames.append(f)
@@ -139,7 +163,7 @@ def button(key,label):
     txt(d,(70,43),label,27,TEXT,True,anchor='lm')
     txt(d,(330,43),'↗',25,BLUE,anchor='rm')
     im.save(OUT/('button-'+key+'.png'),optimize=True)
-hero()
+if not (OUT/'hero.gif').is_file() or not (OUT/'hero.png').is_file():hero()
 titles=[('about','Behind the','code','about.js'),('work','Selected','work','projects.tsx'),('stack','My','toolbox','stack.json'),('experience','Learning by','building','experience.js'),('education','My','journey','education.md'),('contact',"Let's",'connect','contact.js')]
 for t in titles:title(*t)
 info('about',[('Full-Stack & Data','Web interfaces, backend APIs and data workflows.'),('Developer mindset','Clean architecture and useful, maintainable software.'),('Open to opportunities','Junior roles, internships and collaborations.')], 'assets/photos/original/gitex.jpeg')
@@ -147,22 +171,28 @@ info('stack',[('Frontend','React · Vue.js · TypeScript · JavaScript · Tailwi
 info('experience',[('Logic Technologies MA','Web Development Intern · May – July 2026'),('YouCode (UM6P)','Project-based full-stack and data development · 2025 – 2026')])
 info('education',[('YouCode (UM6P)','Full-Stack Web Development & Data · 2025 – 2026'),('OFPPT','Technicien Spécialisé en Développement Digital · Bac+2'),('Faculté des Sciences Moulay Ismaïl','University studies · Meknès'),('Baccalauréat SVT','2020')])
 info('contact',[("Let's build something together",'Open to junior developer roles and meaningful projects.')])
+# Remove stale generated profile cards and replaced button, not the source repositories.
+for key in ('ecoshop','easycoloc','orm'):
+    for suffix in ('.gif','.png'):
+        (OUT/('project-'+key+suffix)).unlink(missing_ok=True)
+(OUT/'button-github.png').unlink(missing_ok=True)
 for i,p in enumerate(projects,1):project(p,i)
-for k,l in [('portfolio','PORTFOLIO'),('linkedin','LINKEDIN'),('github','GITHUB'),('email','EMAIL'),('source','SOURCE CODE'),('demo','LIVE DEMO')]:button(k,l)
+for k,l in [('portfolio','PORTFOLIO'),('linkedin','LINKEDIN'),('whatsapp','WHATSAPP'),('email','EMAIL'),('source','SOURCE CODE'),('demo','LIVE DEMO')]:button(k,l)
 def pic(key,alt):
     return f'<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/{key}.png" /><img src="./assets/code-vibe/{key}.gif" width="100%" alt="{alt}" /></picture>\n'
 def btn(k,url,alt):
     return f'<a href="{url}"><img src="./assets/code-vibe/button-{k}.png" width="180" alt="{alt}" /></a>'
 def row(items):return '<p align="center">'+' &nbsp; '.join(items)+'</p>\n'
 readme=['<!-- Generated by scripts/build_code_vibe.py. Visual content uses local GIFs; accessible alternatives and independent PNG links are preserved. -->\n',pic('hero','Bilal Bakessou — Full-Stack Developer & Data Enthusiast, open to opportunities in Morocco.'),
- row([btn('portfolio','https://potfolio-bilal-bakessou.vercel.app/','Portfolio'),btn('linkedin','https://www.linkedin.com/in/bilal-bakessou-bs6/','LinkedIn'),btn('github','https://github.com/hisokaBK','GitHub')])]
+ row([btn('portfolio','https://potfolio-bilal-bakessou.vercel.app/','Portfolio'),btn('linkedin','https://www.linkedin.com/in/bilal-bakessou-bs6/','LinkedIn'),btn('whatsapp','https://wa.me/212611470423','WhatsApp')])]
 alts={'about':'Full-stack and data developer focused on clean architecture, APIs and data workflows.','stack':'Frontend: React, Vue, TypeScript, JavaScript, Tailwind, Bootstrap. Backend: PHP, Laravel, Node, Express, Python, REST, MVC. Data: PostgreSQL, MySQL, MongoDB, Pandas, ETL. Tools: Git, GitHub, Docker, Postman, Linux, VS Code.','experience':'Logic Technologies MA web development internship, May–July 2026; YouCode project-based development, 2025–2026.','education':'YouCode full-stack and data; OFPPT Bac+2; Faculté des Sciences Moulay Ismaïl; Baccalauréat SVT 2020.','contact':'Open to junior developer roles and meaningful projects.'}
 for k,a,b,f in titles:
     readme.extend(['\n<br />\n',pic('title-'+k,a+' '+b+'...')])
     if k=='work':
         for p in projects:
             key,name,desc,stack,repo,demo=p
-            readme.append(pic('project-'+key,f'{name} — {desc}. Stack: {stack}. Conceptual project visual.'))
+            visual='Application screenshot.' if key=='pharmaclick' or (key=='streaming' and (ROOT/'assets/projects/streaming-screenshot.webp').is_file()) else 'Conceptual project visual.'
+            readme.append(pic('project-'+key,f'{name} — {desc}. Stack: {stack}. {visual}'))
             links=[btn('source','https://github.com/hisokaBK/'+repo,'Source code: '+name)]
             if demo:links.append(btn('demo',demo,'Live demo: '+name))
             readme.append(row(links))
