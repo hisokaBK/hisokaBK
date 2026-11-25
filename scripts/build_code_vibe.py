@@ -158,16 +158,20 @@ def weather_visual(im,box):
 def project(p,i):
     key,name,desc,stack,repo,demo=p
     im=canvas(1200,420);d=ImageDraw.Draw(im)
-    # Keep screenshots at their native aspect ratio; do not crop away the actual UI.
+    # Cover each screenshot frame with a proportional, centered crop.
     if key=='weather':
         weather_visual(im,(30,25,500,370))
     else:
         path=ROOT/'assets'/'projects'/('pharmaclick-screenshot.webp' if key=='pharmaclick' else 'streaming-screenshot.webp')
         if not path.is_file():
             raise FileNotFoundError(path)
-        ph=ImageOps.contain(Image.open(path).convert('RGB'),(490,350),Image.Resampling.LANCZOS)
-        d.rounded_rectangle((30,25,530,395),radius=18,fill=PANEL,outline=LINE,width=2)
-        im.paste(ph,(30+(500-ph.width)//2,25+(370-ph.height)//2))
+        # Equivalent to object-fit: cover: preserve aspect ratio and fill the frame.
+        with Image.open(path) as source:
+            ph=ImageOps.fit(ImageOps.exif_transpose(source).convert('RGB'),(500,370),Image.Resampling.LANCZOS,centering=(0.5,0.5))
+        mask=Image.new('L',(500,370),0)
+        ImageDraw.Draw(mask).rounded_rectangle((0,0,499,369),radius=18,fill=255)
+        im.paste(ph,(30,25),mask)
+        d.rounded_rectangle((30,25,529,394),radius=18,outline=LINE,width=2)
     d=ImageDraw.Draw(im)
     txt(d,(570,31),f'PROJECT / {i:02d}',21,MUTED,mono=True)
     txt(d,(570,87),name,37,TEXT,True)
