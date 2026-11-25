@@ -20,7 +20,7 @@
 
 <p align="center"><a href="https://github.com/hisokaBK/PharmaClick"><img src="./assets/code-vibe/button-source.png" width="180" alt="Source code: PharmaClick" /></a> &nbsp; <a href="https://pharma-click.netlify.app/"><img src="./assets/code-vibe/button-demo.png" width="180" alt="Live demo: PharmaClick" /></a></p>
 
-<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/project-streaming.png" /><img src="./assets/code-vibe/project-streaming.gif" width="100%" alt="Streaming Platform — Live video, replay & audience interaction. Stack: Laravel / Vue.js / LiveKit / PostgreSQL. Conceptual project visual." /></picture>
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/project-streaming.png" /><img src="./assets/code-vibe/project-streaming.gif" width="100%" alt="Streaming Platform — Live video, replay & audience interaction. Stack: Laravel / Vue.js / LiveKit / PostgreSQL. Application screenshot." /></picture>
 
 <p align="center"><a href="https://github.com/hisokaBK/Streaming_Platform"><img src="./assets/code-vibe/button-source.png" width="180" alt="Source code: Streaming Platform" /></a></p>
 
