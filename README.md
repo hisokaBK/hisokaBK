@@ -2,7 +2,7 @@
 
 <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/hero.png" /><img src="./assets/code-vibe/hero.gif" width="100%" alt="Bilal Bakessou — Full-Stack Developer & Data Enthusiast, open to opportunities in Morocco." /></picture>
 
-<p align="center"><a href="https://potfolio-bilal-bakessou.vercel.app/"><img src="./assets/code-vibe/button-portfolio.png" width="180" alt="Portfolio" /></a> &nbsp; <a href="https://www.linkedin.com/in/bilal-bakessou-bs6/"><img src="./assets/code-vibe/button-linkedin.png" width="180" alt="LinkedIn" /></a> &nbsp; <a href="https://github.com/hisokaBK"><img src="./assets/code-vibe/button-github.png" width="180" alt="GitHub" /></a></p>
+<p align="center"><a href="https://potfolio-bilal-bakessou.vercel.app/"><img src="./assets/code-vibe/button-portfolio.png" width="180" alt="Portfolio" /></a> &nbsp; <a href="https://www.linkedin.com/in/bilal-bakessou-bs6/"><img src="./assets/code-vibe/button-linkedin.png" width="180" alt="LinkedIn" /></a> &nbsp; <a href="https://wa.me/212611470423"><img src="./assets/code-vibe/button-whatsapp.png" width="180" alt="WhatsApp" /></a></p>
 
 
 <br />
@@ -16,7 +16,7 @@
 
 <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/title-work.png" /><img src="./assets/code-vibe/title-work.gif" width="100%" alt="Selected work..." /></picture>
 
-<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/project-pharmaclick.png" /><img src="./assets/code-vibe/project-pharmaclick.gif" width="100%" alt="PharmaClick — Multilingual pharmacy storefront. Stack: React / JavaScript / CSS. Conceptual project visual." /></picture>
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/project-pharmaclick.png" /><img src="./assets/code-vibe/project-pharmaclick.gif" width="100%" alt="PharmaClick — Multilingual pharmacy storefront. Stack: React / JavaScript / CSS. Application screenshot." /></picture>
 
 <p align="center"><a href="https://github.com/hisokaBK/PharmaClick"><img src="./assets/code-vibe/button-source.png" width="180" alt="Source code: PharmaClick" /></a> &nbsp; <a href="https://pharma-click.netlify.app/"><img src="./assets/code-vibe/button-demo.png" width="180" alt="Live demo: PharmaClick" /></a></p>
 
@@ -24,21 +24,9 @@
 
 <p align="center"><a href="https://github.com/hisokaBK/Streaming_Platform"><img src="./assets/code-vibe/button-source.png" width="180" alt="Source code: Streaming Platform" /></a></p>
 
-<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/project-ecoshop.png" /><img src="./assets/code-vibe/project-ecoshop.gif" width="100%" alt="EcoShop API — Authentication, products, carts & orders. Stack: PHP / Laravel / REST / Docker. Conceptual project visual." /></picture>
-
-<p align="center"><a href="https://github.com/hisokaBK/EcoShop_API"><img src="./assets/code-vibe/button-source.png" width="180" alt="Source code: EcoShop API" /></a></p>
-
 <picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/project-weather.png" /><img src="./assets/code-vibe/project-weather.gif" width="100%" alt="Weather Risk Pipeline — Data ingestion, cleaning & risk analysis. Stack: Python / Pandas / Airflow / PostgreSQL. Conceptual project visual." /></picture>
 
 <p align="center"><a href="https://github.com/hisokaBK/pipeline-de-donnees"><img src="./assets/code-vibe/button-source.png" width="180" alt="Source code: Weather Risk Pipeline" /></a></p>
-
-<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/project-easycoloc.png" /><img src="./assets/code-vibe/project-easycoloc.gif" width="100%" alt="EasyColoc — Shared housing, expenses & balances. Stack: Laravel / Blade / Tailwind / Docker. Conceptual project visual." /></picture>
-
-<p align="center"><a href="https://github.com/hisokaBK/Colocation-EasyColoc"><img src="./assets/code-vibe/button-source.png" width="180" alt="Source code: EasyColoc" /></a></p>
-
-<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/code-vibe/project-orm.png" /><img src="./assets/code-vibe/project-orm.gif" width="100%" alt="Custom PHP ORM — Lightweight PDO ORM and MVC CRUD. Stack: PHP / PDO / PostgreSQL / Docker. Conceptual project visual." /></picture>
-
-<p align="center"><a href="https://github.com/hisokaBK/PHP-ORM"><img src="./assets/code-vibe/button-source.png" width="180" alt="Source code: Custom PHP ORM" /></a></p>
 
 
 <br />
